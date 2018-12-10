@@ -1,4 +1,4 @@
-# 使用示例构建 API网关API
+# 使用示例构建API网关API
 
 为了帮助您开始使用基本工作流程来构建并测试API网关API，您可以使用京东云控制台API网关来创建并测试与 PetStore 网站进行 HTTP 集成的简单 API。API 定义预配置为Swagger 2.0文件。在将 API 定义加载到API网关中后，您可以使用API网关控制台来检查 API 的基本结构或直接部署并测试API。
 
@@ -18,28 +18,28 @@
 
 #### 2.	点击创建分组。
 
-![创建分组](./md_pic/创建分组.png)
+![创建分组](https://github.com/jdcloudcom/cn/blob/edit/image/Internet-Middleware/API-Gateway/exap_create_apigroup_1.png)
 
 #### 3.	跳转新建API分组页面后，填写API分组信息。
 
-![新建API分组](./md_pic/新建API分组.png)
+![新建API分组](https://github.com/jdcloudcom/cn/blob/edit/image/Internet-Middleware/API-Gateway/exap_create_apigroup_2.png)
 
 #### 4. 点击确定，提示创建成功，在弹出窗口中选择“管理API”，跳转到此分组的API列表界面。
 
-![新建API分组成功](./md_pic/新建API分组成功.png)
+![新建API分组成功](https://github.com/jdcloudcom/cn/blob/edit/image/Internet-Middleware/API-Gateway/exap_create_apigroup_success.png)
 
 #### 5.	您可以通过以下两种方式部署API。
 - 新建API：点击新建API，配置API的“名称”、“子路径”、“查询参数”、“请求体格式”和“正常返回格式”后，点击确定.
 
-![新建API1](./md_pic/新建API1.png)
+![新建API1](https://github.com/jdcloudcom/cn/blob/edit/image/Internet-Middleware/API-Gateway/exap_create_api_1.png)
 
-![导入API2](./md_pic/新建API2.png)
+![导入API2](https://github.com/jdcloudcom/cn/blob/edit/image/Internet-Middleware/API-Gateway/exap_create_api_2.png)
 
 - 导入API：点击导入API，上传符合swagger2.0规范的yaml文件，点击确定，API列表界面会显示yaml文件中设定的API。
 
-![导入API](./md_pic/导入API.png)
+![导入API](https://github.com/jdcloudcom/cn/blob/edit/image/Internet-Middleware/API-Gateway/exap_import_api_1.png)
 
-![导入API2](./md_pic/导入API2.png)
+![导入API2](https://github.com/jdcloudcom/cn/blob/edit/image/Internet-Middleware/API-Gateway/exap_import_api_2.png)
 
 #### 6.	点击“版本修订列表”标签页，点击发布，配置好如下几项后，点击确定。
 
@@ -48,39 +48,39 @@
 - 后端服务：唯一后端；
 - 后端服务地址：http://petstore-demo-endpoint.execute-api.com 。
 
-![发布](./md_pic/发布.png)
+![发布](https://github.com/jdcloudcom/cn/blob/edit/image/Internet-Middleware/API-Gateway/exap_deploy_1.png)
 
-![发布2](./md_pic/发布2.png)
+![发布2](https://github.com/jdcloudcom/cn/blob/edit/image/Internet-Middleware/API-Gateway/exap_deploy_2.png)
 
 #### 7.	发布成功后，点击“生成SDK和文档”，可下载JavaSDK、PythonSDK和API文档。
 
-![生成SDK和文档](./md_pic/生成SDK和文档.png)
+![生成SDK和文档](https://github.com/jdcloudcom/cn/blob/edit/image/Internet-Middleware/API-Gateway/exap_generate_SDK_doc.png)
 
 ### 创建访问密钥-创建访问授权-绑定分组：
 
 #### 1.	打开[访问密钥](https://apigateway-console.jdcloud.com/accessSecretKey)，点击创建访问密钥。
 
-![创建访问密钥](./md_pic/创建访问密钥.png)
+![创建访问密钥](https://github.com/jdcloudcom/cn/blob/edit/image/Internet-Middleware/API-Gateway/exap_create_access_key_1.png)
 
 #### 2.	填写名称和描述（选填），点击确定。
 
-![创建访问密钥2](./md_pic/创建访问密钥2.png)
+![创建访问密钥2](https://github.com/jdcloudcom/cn/blob/edit/image/Internet-Middleware/API-Gateway/exap_create_access_key_2.png)
 
 #### 3.	点击密钥名，查看此访问密钥的详细信息，拷贝访问密钥ID、APIKey和APISecret。
 
-![密钥详细信息](./md_pic/密钥详细信息.png)
+![密钥详细信息](https://github.com/jdcloudcom/cn/blob/edit/image/Internet-Middleware/API-Gateway/exap_access_key_info.png)
 
 #### 4.	打开[访问授权](https://apigateway-console.jdcloud.com/authorizationList)，点击“创建授权”。
 
-![创建授权](./md_pic/创建授权.png)
+![创建授权](https://github.com/jdcloudcom/cn/blob/edit/image/Internet-Middleware/API-Gateway/exap_create_access_auth_1.png)
 
 #### 5.	填写用户标识（访问密钥的访问密钥ID）和描述（选填），点击确定。
 
-![创建授权2](./md_pic/创建授权2.png)
+![创建授权2](https://github.com/jdcloudcom/cn/blob/edit/image/Internet-Middleware/API-Gateway/exap_create_access_auth_2.png)
 
 #### 6.	点击“绑定”，将创建的PetStore分组移动到已绑定。
 
-![绑定](./md_pic/绑定.png)
+![绑定](https://github.com/jdcloudcom/cn/blob/edit/image/Internet-Middleware/API-Gateway/exap_bind.png)
 
 至此，在API网关控制台的界面操作已经完成，接下来可以通过SDK进行调用。
 
@@ -142,7 +142,7 @@ public class SDKTest {
 
 #### 3.	运行SDKTest.java，得到返回结果。
 
-![Java返回结果](./md_pic/Java返回结果.png)
+![Java返回结果](https://github.com/jdcloudcom/cn/blob/edit/image/Internet-Middleware/API-Gateway/exap_Java_return.png)
 
 ### 通过Python SDK调用：
 
@@ -150,7 +150,7 @@ public class SDKTest {
 
 #### 2.	切换到PetStore目录下，新建PetStoreTest.py文件。
 
-```Python
+```
 # coding=utf8
 
 from jdcloud_sdk.core.credential import Credential
@@ -198,11 +198,10 @@ if __name__ == "__main__":
     print pet_store.create_pet_test().content
     print pet_store.get_pet_info_test().content
 
-
 ```
 
 #### 3.	运行PetStoreTest.py，得到返回结果。
 
 ### 您可以通过[API网关监控](http://cms-console-north-2a-backup.jdcloud.com/monitor/apigateway)实时获取您的API调用情况：成功数、流量、响应时间、请求异常等信息以及设置异常情况报警。
 
-![监控](./md_pic/监控.png)
+![监控](https://github.com/jdcloudcom/cn/blob/edit/image/Internet-Middleware/API-Gateway/exap_monitor.png)
